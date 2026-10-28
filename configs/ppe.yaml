@@ -1,0 +1,5 @@
+# Ajuste `path` (no Colab: data/ aponta para o Drive). Rótulos gerados por scripts/convert_sh17.py.
+path: data/sh17_ppe
+train: train_files.txt
+val: val_files.txt
+names: {0: person, 1: helmet, 2: glasses, 3: vest, 4: gloves, 5: boots}

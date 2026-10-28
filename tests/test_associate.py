@@ -13,3 +13,10 @@ def test_epi_fora_da_zona_ou_da_pessoa_nao_conta():
     items = [Item("helmet", (130, 300, 170, 340)), Item("vest", (300, 100, 380, 200))]
     r = associate(P, items, {"helmet", "vest"})
     assert r == {"helmet": False, "vest": False}
+
+
+def test_containment_exige_fracao_dentro():
+    from ppe.associate import associate_containment
+    items = [Item("helmet", (130, 5, 170, 40)), Item("vest", (190, 100, 290, 200))]  # vest 10% dentro
+    r = associate_containment(P, items, {"helmet", "vest"})
+    assert r == {"helmet": True, "vest": False}
