@@ -28,6 +28,8 @@ sistema decide, **por trabalhador**, se cada EPI exigido está presente ou ausen
 | E6 | Borda: PyTorch→ONNX→TensorRT FP16/INT8 | latência p50/p95, FPS, ΔmAP |
 
 ## Ambiente
+**Execução pesada (treino, benchmark) no Google Colab**: use `notebooks/colab_setup.ipynb`. O PC local é só para editar código e rodar testes leves.
+
 - Treino: RTX 4060 Ti 8 GB. Borda alvo: Jetson (a definir o modelo).
 - Python 3.12 (3.14 ainda sem wheels do PyTorch).
 

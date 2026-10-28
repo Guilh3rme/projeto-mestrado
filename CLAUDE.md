@@ -4,6 +4,7 @@ Contexto: `README.md` (pergunta de pesquisa, pipeline, experimentos) e `docs/pla
 Os planos detalhados ficam em `docs/fase-N-<nome>.md`. Leia a fase corrente antes de agir.
 
 ## Comandos
+- Treino/avaliação pesados rodam no **Colab** (`notebooks/colab_setup.ipynb`), não no PC local; dados e `runs/` ficam no Drive.
 - Ambiente: Python 3.12 (`python3 -m venv .venv` só com 3.12; o 3.14 do sistema não serve para PyTorch).
 - Instalar: `pip install -e ".[dev]"`
 - Testes: `pytest` · Lint/format: `ruff check . && ruff format .`
