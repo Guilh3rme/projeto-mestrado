@@ -1,0 +1,13 @@
+[project]
+name = "ppe-compliance"
+version = "0.1.0"
+description = "Verificação de conformidade de EPI por pessoa: detecção, rastreamento, associação e borda"
+requires-python = ">=3.10,<3.13"
+dependencies = ["ultralytics>=8.3", "opencv-python", "numpy", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+data/
+runs/
+*.pt
+*.onnx
+*.engine
+.ipynb_checkpoints/
+graphify-out/
